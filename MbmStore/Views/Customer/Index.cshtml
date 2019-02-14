@@ -1,0 +1,23 @@
+﻿
+@using MbmStore.Helpers
+@model List<MbmStore.Models.Customer>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1 class="jumbotron">Customers</h1>
+
+@foreach (var customer in Model)
+{
+    @Html.RenderCustomer(customer)
+    <br />
+}
+
+<hr/>
+
+@foreach (var customer in Model)
+{
+    @Html.Partial("_customerCard", customer)
+    
+}

@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+@Html.ActionLink("Home", "Index", "Home")
+
+<h2>@ViewBag.JungleBook.Title</h2>
+<p>Price: @String.Format("{0:0.00}", ViewBag.JungleBook.Price)</p>
+<p>Director: @String.Format("{0:0.00}", ViewBag.JungleBook.Director) </p>
+<p><img src="/content/images/@ViewBag.JungleBook.ImageUrl" alt="@ViewBag.JungleBook.Title" /></p>
+
+<h2>@ViewBag.BecomingAstrid.Title</h2>
+<p>Price: @String.Format("{0:0.00}", ViewBag.BecomingAstrid.Price)</p>
+<p>Director: @String.Format("{0:0.00}", ViewBag.BecomingAstrid.Director)</p>
+<p><img src="/content/images/@ViewBag.BecomingAstrid.ImageUrl" alt="@ViewBag.BecomingAstrid.Title" /></p>
+
+<h2>@ViewBag.StarBorn.Title</h2>
+<p>Price: @String.Format("{0:0.00}", ViewBag.StarBorn.Price)</p>
+<p>Director: @String.Format("{0:0.00}", ViewBag.StarBorn.Director)</p>
+<p><img src="/content/images/@ViewBag.StarBorn.ImageUrl" alt="@ViewBag.StarBorn.Title" /></p>

@@ -1,0 +1,25 @@
+﻿@model MbmStore.Models.Customer
+
+<div class="card border-success mb-3">
+
+    <div class="card-header text-white bg-success">
+        <i class="fa fa-user fa-2x"></i>
+        <p>@Model.CustomerInfo</p>
+    </div>
+
+    <div class="card-body">
+
+        <div class="address-block">
+            <i class="fa fa-address-card fa-2x"></i>
+            <h5>@Model.Address</h5>
+            <p>@Model.Zip @Model.City</p>
+        </div>
+        
+        <div class="phone-block">
+            <i class="fa fa-mobile fa-2x"></i>
+            <p>@string.Join(", ", Model.PhoneNumbers.ToList())</p>
+        </div>
+
+    </div>
+
+</div>
